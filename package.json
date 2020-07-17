@@ -7,18 +7,20 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ngcc"
   },
   "private": true,
   "dependencies": {
+    "@angular-extensions/elements": "^9.1.3",
+    "@angular-extensions/model": "^8.1.0",
     "@angular/animations": "^9.0.4",
     "@angular/cdk": "^9.1.0",
     "@angular/common": "~9.0.3",
     "@angular/compiler": "~9.0.3",
     "@angular/core": "~9.0.3",
-    "@angular-extensions/model": "^8.1.0",
-    "@angular-extensions/elements": "^9.1.3",
     "@angular/forms": "~9.0.3",
+    "@angular/localize": "^9.1.12",
     "@angular/material": "^9.1.0",
     "@angular/platform-browser": "~9.0.3",
     "@angular/platform-browser-dynamic": "~9.0.3",

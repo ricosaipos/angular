@@ -370,5 +370,8 @@
       }
     }
   },
-  "defaultProject": "saipos"
+  "defaultProject": "saipos",
+  "cli": {
+    "analytics": "f8206d3a-f1a4-457d-ba9b-1cd344a6d949"
+  }
 }
