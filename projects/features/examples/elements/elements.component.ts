@@ -20,4 +20,8 @@ export class ElementsComponent implements OnInit {
   increment() {
     this.counter++;
   }
+
+  mouseOver() {
+    console.log('what')
+  }
 }

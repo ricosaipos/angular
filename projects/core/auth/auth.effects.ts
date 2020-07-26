@@ -33,7 +33,7 @@ export class AuthEffects {
       this.actions$.pipe(
         ofType(authLogout),
         tap(() => {
-          this.router.navigate(['']);
+          this.router.navigate(['']).then();
           this.localStorageService.setItem(AUTH_KEY, {
             isAuthenticated: false
           });

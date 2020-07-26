@@ -10,8 +10,9 @@
     <div class="col-md-12 col-lg-6">
       <ng-template #error>Loading of element failed...</ng-template>
       <ng-template #loading>Loading...</ng-template>
-      <mwc-button raised
+      <mwc-button trailingIcon
                   *axLazyElement="'https://unpkg.com/@material/mwc-button@0.6.0/mwc-button.js?module'; loadingTemplate: loading; errorTemplate: error; module: true"
+                  (mouseover)="mouseOver()"
                   (click)="increment()">
         Increment
       </mwc-button>

@@ -3,7 +3,7 @@
   <mat-sidenav-container>
 
     <mat-sidenav #sidenav mode="push">
-      <div class="branding"><img [src]="logo" />
+      <div class="branding"><img alt="Saipos" [src]="logo.default" />
         <span>{{ 'anms.title.short' | translate}}</span></div>
       <mat-nav-list>
         <a mat-list-item *ngFor="let item of navigationSideMenu" (click)="sidenav.close()" [routerLink]="[item.link]"
@@ -81,6 +81,7 @@
       </div>
 
       <div class="content" [@routeAnimations]="o.isActivated && o.activatedRoute.routeConfig.data && o.activatedRoute.routeConfig.data.title">
+        <span>saipos app is running!</span>
         <router-outlet #o="outlet"></router-outlet>
       </div>
 

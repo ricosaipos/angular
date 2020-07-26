@@ -28,6 +28,7 @@ import {
 })
 export class AppComponent implements OnInit {
   isProd = env.production;
+  title = 'Saipos'
   envName = env.envName;
   version = env.versions.app;
   year = new Date().getFullYear();
@@ -60,8 +61,6 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log('ever trigger, ever')
-    const n = 10
     this.storageService.testLocalStorage();
     if (AppComponent.isIEorEdgeOrSafari()) {
       this.store.dispatch(

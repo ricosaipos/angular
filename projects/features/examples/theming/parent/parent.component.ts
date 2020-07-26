@@ -10,7 +10,7 @@ import { ROUTE_ANIMATIONS_ELEMENTS } from '../../../../core/core.module';
 })
 export class ParentComponent implements OnInit {
   // @ts-ignore
-  themeSrc: string = require('!raw-loader!./parent.component.scss-theme.scss');
+  themeSrc: { default: string } = require('!raw-loader!./parent.component.scss-theme.scss');
   routeAnimationsElements = ROUTE_ANIMATIONS_ELEMENTS;
 
   constructor() {}
